@@ -1,8 +1,8 @@
 name: My Frist Github Action
 on: [push]
 jobs:
-    print_hello_world:
+    build-app:
         runs-on: ubuntu-latest
         steps:
-            - run: echo "hello world"
-            - run: echo "another step"      
+              - uses: actions/checkout@v2 
+              - run: tree
