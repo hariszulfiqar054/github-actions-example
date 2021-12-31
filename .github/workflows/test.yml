@@ -1,11 +1,11 @@
 name: My Frist Github Action
 on: [push]
 jobs:
-    build-app:
-        runs-on: ubuntu-latest
-        steps:
-              - uses: actions/checkout@v2 
-              - uses: actions/setup-node@v2
-                  with: 
-                    node-version: '16.13.1'
-              - run: tree
+  build-app:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '16.13.1'
+      - run: tree
